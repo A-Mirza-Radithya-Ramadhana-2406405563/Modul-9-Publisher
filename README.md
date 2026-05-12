@@ -9,3 +9,11 @@ URL `amqp://guest:guest@localhost:5672` yang sama pada publisher dan subscriber 
 ## Running RabbitMQ
 
 ![alt text](images/image.png)
+
+## Sending and Processing Event
+
+![alt text](images/console.png)
+
+Publisher mengirim beberapa event `UserCreatedEventMessage` ke RabbitMQ. Setiap message berisi data `user_id` dan `user_name`, seperti `2406405563-Amir`, `2406405563-Budi`, dan lainnya.
+
+Subscriber kemudian melakukan listening pada queue RabbitMQ dan menerima setiap message yang dikirim oleh publisher. Output pada console membuktikan bahwa proses pengiriman message dari publisher ke subscriber berhasil berjalan.
