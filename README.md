@@ -20,7 +20,7 @@ Subscriber kemudian melakukan listening pada queue RabbitMQ dan menerima setiap 
 
 ## Monitoring chart based on publisher
 
-![alt text](images/chart1.png)
+![alt text](images/Chart1.png)
 
 Pada grafik kedua, yaitu bagian **Message rates**, terlihat adanya spike atau lonjakan pada saat publisher dijalankan. Spike tersebut muncul karena publisher mengirim beberapa message ke RabbitMQ dalam waktu singkat.
 
